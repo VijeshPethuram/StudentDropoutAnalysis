@@ -10,7 +10,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-df = pd.read_csv('E://Vijesh Personal Files//Programs//SoftEngg//Student Dropout Analysis//dataset.csv')
+df = pd.read_csv('dataset.csv')
 df=df.iloc[:1000]
 #df['Target'].replace('Enrolled','Graduate',inplace=True)
 st.title("Welcome to Dropout Analysis 📈")
