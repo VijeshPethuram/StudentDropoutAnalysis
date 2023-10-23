@@ -3,6 +3,5 @@ streamlit_lottie
 pandas
 matplotlib
 plotly
-dotenv
 pickle
 numpy
