@@ -3,5 +3,4 @@ streamlit_lottie
 pandas
 matplotlib
 plotly
-pickle
 numpy
