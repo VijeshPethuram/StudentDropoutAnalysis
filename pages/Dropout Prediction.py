@@ -103,12 +103,12 @@ if submit:
         st.warning("Sorry! The Model could not be loaded correctly due to some backend issues.(Pickle file error)")
 
     def droppred(inputarr):
-    nparr=np.asarray(inputarr)
-    print(nparr)
-    nparr=nparr.astype('float32')
-    nparr=nparr.reshape(1,-1)
-    pred=loaded_model.predict(nparr)
-    return pred
+        nparr=np.asarray(inputarr)
+        print(nparr)
+        nparr=nparr.astype('float32')
+        nparr=nparr.reshape(1,-1)
+        pred=loaded_model.predict(nparr)
+        return pred
     
     res=droppred([a1,b1,c1,d1,e1,f1,g1,h1,i1,j1,k1,l1])
     if(res[0]==0):
