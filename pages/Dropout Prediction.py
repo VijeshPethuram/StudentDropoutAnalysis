@@ -49,7 +49,7 @@ with col2:
 
 submit=st.button("Check for Dropout")
 try:
-loaded_model=pickle.load(open("/mount/src/studentdropoutanalysis/Dropout_model.sav" ,'rb'))
+    loaded_model=pickle.load(open("/mount/src/studentdropoutanalysis/Dropout_model.sav" ,'rb'))
 except Exception as e:
     st.warning("Sorry! The Model could not be loaded correctly due to some backend issues.(Pickle file error)")
     
