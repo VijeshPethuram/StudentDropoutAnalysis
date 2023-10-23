@@ -16,7 +16,6 @@ st.set_page_config(page_title='Student Dropout Prediction')
 st.title("Welcome to Student Dropout Prediction")
 st.subheader('Find out whether a student will Dropout or Graduate instantly!')
 st.header("")
-loaded_model=pickle.load(open("/mount/src/studentdropoutanalysis/Dropout_model.sav" ,'rb'))
 st.subheader('Enter Student age:')
 j=st.slider("Age",0,100,16)
 st.subheader('Gender:')
@@ -49,6 +48,7 @@ with col2:
 
 
 submit=st.button("Check for Dropout")
+loaded_model=pickle.load(open("/mount/src/studentdropoutanalysis/Dropout_model.sav" ,'rb'))
 
 def droppred(inputarr):
     nparr=np.asarray(inputarr)
