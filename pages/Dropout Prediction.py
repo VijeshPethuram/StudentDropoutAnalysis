@@ -100,7 +100,7 @@ if submit:
     try:
         loaded_model=pickle.load(open("/mount/src/studentdropoutanalysis/Dropout_model.sav" ,'rb'))
     except Exception as e:
-        st.error("Sorry! The Model could not be loaded correctly due to some backend issues.(Pickle file error)")
+        st.error("Sorry! The Model could not be loaded correctly as Pickle filea are not supported on the Streamlit hosting server.)")
         raise e
 
     def droppred(inputarr):
