@@ -12,21 +12,7 @@ import plotly.express as px
 
 df = pd.read_csv('dataset.csv')
 df=df.iloc[:1000]
-#df['Target'].replace('Enrolled','Graduate',inplace=True)
 st.title("Welcome to Dropout Analysis 📈")
-# Calculate the dropout rate
-
-#dropouts=df['Target'].value_counts()['Dropout']
-#dropout_rate = dropouts/1000;
-# Calculate the number of dropouts, enrolled students, and graduates
-#dropout_count = df['Target'].value_counts()['Dropout']
-#enrolled_count = df['Target'].value_counts()['Enrolled']
-#graduate_count = df['Target'].value_counts()['Graduate']
-
-# Calculate the percentage of dropouts, enrolled students, and graduates
-#dropout_percentage = dropout_count / (dropout_count + enrolled_count + graduate_count) * 100
-#enrolled_percentage = enrolled_count / (dropout_count + enrolled_count + graduate_count) * 100
-#graduate_percentage = graduate_count / (dropout_count + enrolled_count + graduate_count) * 100
 
 st.subheader("\tDropout Analysis based on Age Groups 📈")
 st.subheader("")
